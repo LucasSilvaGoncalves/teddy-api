@@ -1,4 +1,4 @@
-## Description
+# Description
 
 Project Teddy API
 
@@ -10,7 +10,7 @@ Levando em consideração as seguintes features:
 3. Reset de senha
 4. Seguir padrão de projeto + Teste unitários.
 
-- 
+##
 
 1. Quanto tempo levaria?
 - R: 2 semanas a 3 semanas
@@ -19,16 +19,14 @@ Levando em consideração as seguintes features:
 3. Qual a senioridade dos desenvolvedores?
 - R: Plenos
 
-Project Teddy API
-
-## Project setup:
+# Project setup:
 
 
 ## Environment 
 Use [.env.example](.env.example) for template of environment.
 
 ## Database (Postgres)
-Crate table query:
+Create table query:
 
 ```bash
 CREATE TABLE client (
