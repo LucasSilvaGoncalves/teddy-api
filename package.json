@@ -1,9 +1,10 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "teddy-api",
   "private": true,
   "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
-  "license": "MIT",
+  "description": "Project Teddy API",
+  "author": "Lucas Gonçalves",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -26,8 +27,15 @@
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/swagger": "^11.0.6",
+    "@nestjs/typeorm": "^11.0.0",
+    "class-validator": "^0.14.1",
+    "dotenv": "^16.4.7",
+    "mysql2": "^3.13.0",
+    "pg": "^8.13.3",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.21"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -62,7 +70,6 @@
       "json",
       "ts"
     ],
-    "rootDir": "src",
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
@@ -70,7 +77,10 @@
     "collectCoverageFrom": [
       "**/*.(t|j)s"
     ],
-    "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node",
+    "modulePaths": [
+      "<rootDir>"
+    ]
   }
 }
